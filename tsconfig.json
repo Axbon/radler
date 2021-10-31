@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "module": "commonjs",
+    "strict": true,
+    "lib": [
+      "esnext"
+    ],
+    "outDir": "./build",
+    "sourceMap": true,
+    "target": "es2015",
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "./node_modules/*"
+  ],
+  "noUnusedLocals": true,
+  "noUnusedParameters": true
+}

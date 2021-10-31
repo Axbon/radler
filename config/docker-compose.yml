@@ -1,0 +1,22 @@
+services:
+  redis:
+    container_name: session-cache
+    image: 'redis:6.2.1-alpine'
+    ports:
+      - '6379:6379'
+  tenants_registry:
+    container_name: tenants-registry
+    image: 'postgres:13.0'
+    environment:
+      POSTGRES_PASSWORD: developers
+      POSTGRES_USER: postgres
+    ports:
+      - '20000:5432'
+  tenants:
+    container_name: tenants-data
+    image: 'postgres:13.0'
+    environment:
+      POSTGRES_PASSWORD: developers
+      POSTGRES_USER: postgres
+    ports:
+      - '30000:5432'

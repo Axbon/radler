@@ -1,0 +1,1 @@
+rsync -zarv  --prune-empty-dirs --include '*/'  --include='*.sql' --include='*.sh' --include='.[^.]*' --exclude='*' src/* ./config build

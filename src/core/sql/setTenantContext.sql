@@ -1,0 +1,1 @@
+SELECT set_tenant(:tenantId, :secret)

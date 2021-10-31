@@ -1,0 +1,8 @@
+node_modules
+.vscode
+yarn-error.log
+curl_cookie.txt
+.env
+build
+.env
+.DS_Store
