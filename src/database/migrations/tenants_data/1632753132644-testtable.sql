@@ -2,10 +2,10 @@
 -- migrate:up
    
 CREATE TABLE testdata (
-   id SERIAL,
    tenant_id UUID NOT NULL,
+   id SERIAL,
    test VARCHAR(255) NOT NULL,
-   CONSTRAINT pkey_test_id PRIMARY KEY (id)
+   CONSTRAINT pkey_test_id PRIMARY KEY (tenant_id, id)
 );
 
 GRANT ALL ON testdata TO saas_user;
